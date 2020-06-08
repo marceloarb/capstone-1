@@ -1,17 +1,89 @@
 [
     {
         "id": 1 ,
-        "title": "shirt",
-        "key": 1
+        "title": "Crop",
+        "key": 1,
+        "price": 28.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img1.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img1.2.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img1.JPG"],
+        "category":"Tops",
+        "color":"",
+        "Manufacturer":"BrilhoVital"
     },
     {
         "id": 2 ,
-        "title": "Blusa",
-        "key": 2
+        "title": "Short",
+        "key": 2,
+        "price": 18.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img1.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img1.2.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img1.JPG"],
+        "category":"Bottoms",
+        "color":"",
+        "inventory":10,
+        "Manufacturer":"BrilhoVital"
     },
     {
         "id": 3 ,
-        "title": "calca",
-        "key": 3
+        "title": "V-neck Jumpsuit",
+        "key": 3,
+        "price": 59.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img2.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img2.2.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img2.3.JPG"],
+        "category":"Rompers",
+        "color":["Black","White"],
+        "inventory":6,
+        "Manufacturer":"BrilhoVital"
+    },
+    {
+        "id": 4 ,
+        "title": "Crop",
+        "key": 4,
+        "price": 15.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img3.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img3.2.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img3.3.JPG"],
+        "category":"Tops",
+        "color":["Blue"],
+        "inventory":10,
+        "Manufacturer":"BrilhoVital"
+    },
+    {
+        "id": 5 ,
+        "title": "High Waist Pants",
+        "key": 5,
+        "price": 18.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img3.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img3.2.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img3.3.JPG"],
+        "category":"Bottoms",
+        "color":"",
+        "inventory":10,
+        "Manufacturer":"BrilhoVital"
+    },
+    {
+        "id": 6 ,
+        "title": "T-shirt",
+        "key": 6,
+        "price": 15.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img4.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img4.2.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img4.3.JPG"],
+        "category":"Tops",
+        "color":["Black"],
+        "inventory":10,
+        "Manufacturer":"BrilhoVital"
+    },
+    {
+        "id": 7 ,
+        "title": "Jeans",
+        "key": 7,
+        "price": 21.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img4.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img4.2.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img4.3.JPG"],
+        "category":"Bottoms",
+        "color":["Blue"],
+        "inventory":10,
+        "Manufacturer":"BrilhoVital"
+    },
+    {
+        "id": 8 ,
+        "title": "Jumpsuit",
+        "key": 8,
+        "price": 15.99 ,
+        "img":["/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img5.1.JPG","/Users/marcelobarbosa/Documents_copy/teksystems/capstone-1/src/images/img5.2.JPG"],
+        "category":"Rompers",
+        "color":["White"],
+        "inventory":11,
+        "Manufacturer":"BrilhoVital"
     }
 ]

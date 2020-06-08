@@ -1,18 +1,20 @@
 import React from 'react';
 import './App.css';
-import Data from './data.json'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'reactstrap';
+import Data from './data.json';
+import Slide from './components/PicturesSlide'
+import NavBar from './components/NavBar';
 
 function App() {
+  const data = Data;
   return (
-    <div className="App">
-      <div>
-        { Data.map(post =>{
-          return(
-            <h1>{post.title}</h1>
-          )
-        })}
-      </div>
-    </div>
+    <Container>
+      <Col>
+      <NavBar></NavBar>
+      <Slide/>
+      </Col>
+    </Container>
   );
 }
 
