@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col,Collapse, Navbar, NavbarBrand,NavbarToggler, Nav, NavItem, NavLink  } from 'reactstrap';
 import { Link, Route } from 'react-router-dom';
-import Data from '../data.json';
+
 
 const NavBar = (props)=>{
     const {setSearch,search}=props
@@ -11,7 +11,6 @@ const NavBar = (props)=>{
 
     let value = "";
     const onChange = (e) => {value = e.target.value;}
-    console.log(value);
     const onClick = (e)=>{
         setSearch(value);
         e.target.value="";
@@ -44,7 +43,7 @@ const NavBar = (props)=>{
 
                 <div   className="form-inline my-2 my-lg-0">
                     <input id="reset" onChange={onChange}  className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button onClick={onClick} className="btn btn-dark my-2 my-sm-0 "  type="submit">Search</button>
+                    <button onClick={onClick} className="btn btn-dark my-2 my-sm-0 "  type="submit"><Link to="/product"> Search </Link></button>
                 </div>
                 <Link to="/checkout" >
                 <svg className="bi bi-cart4" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

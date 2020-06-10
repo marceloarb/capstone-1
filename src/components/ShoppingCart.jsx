@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Data from '../data.json'
 import {Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -11,10 +10,10 @@ import {
 
 
 const ShoppingCart = (props)=>{
- 
-  const data = props.products;
-  console.log(data);
-
+	const data = props.products;
+	console.log(data);
+	let total = 0;
+	const totalAmount = data.map(item=> total += item.price);
 
   return (
 		<Container id="mainList">
@@ -24,21 +23,21 @@ const ShoppingCart = (props)=>{
 						<tr>
 							<th>Product Name</th>
 							<th>Price</th>
-							<th>Amount In Cart</th>
 							<th>Remove Item</th>
 						</tr>
 						{data.map(item => (
 							<tr>
 								<td>{item.title}</td>
 								<td>{item.price}</td>
-            <td>{()=>{
-              item.price += item.price;
-            }}</td>
 								<td>
 										<button type="submit">Remove Item</button>
 								</td>
 							</tr>
 						))}
+						<tr>
+							<td>Total Amount</td>
+							<td>{total}</td>
+						</tr>
 				</Table>
 			</Row>
 		</Container>

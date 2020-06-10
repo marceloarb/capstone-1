@@ -1,23 +1,23 @@
 import React, {useState} from 'react';
-import Data from '../data.json'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
 import {
     Card, Button, CardImg, CardTitle, CardText, CardGroup,
     CardSubtitle, CardBody,Form
   } from 'reactstrap';
-import ShoppingCart from './ShoppingCart.jsx';
 
 
 
 const DisplayAll = (props)=>{
 
     const onClick = (ind)=>{
-        props.onSetProducts(ind);
+        ind.inventory -=1;
+        const purchasedItem = {...ind, inventory:1}
+        props.onSetProducts(purchasedItem);
     }
 
     return (
-        Data.map((db,index)=>{
+        props.items.map((db,index)=>{
             return (
                 <CardGroup hover style={{width:"33%", display:"inline-block"}} >
                     <Card>
@@ -25,6 +25,7 @@ const DisplayAll = (props)=>{
                         <CardBody style={{textAlign:"center"}}>
                         <CardTitle><h3>{db.title}</h3></CardTitle>
                         <CardText>${db.price}</CardText>
+                        <CardText>Quantity : {db.inventory}</CardText>
                         <button onClick={() => onClick(db)}  className="btn btn-secondary" ><Link  style={{color:"white"}} to="checkout">Buy now!</Link></button>
                         <p>Serial Number:{db.key},
                         Manufacture:{db.Manufacturer},
