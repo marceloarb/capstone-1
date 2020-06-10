@@ -14,41 +14,32 @@ const ShoppingCart = (props)=>{
  
   const data = props.products;
   console.log(data);
+
+
   return (
 		<Container id="mainList">
-			<Row style={{ display: 'flex', justifyContent: 'center' }}>
-				<h3>Shopping Cart</h3>
-			</Row>
+				<h3 style={{textAlign:"center"}}>Shopping Cart</h3>
 			<Row>
-				<Table striped bordered hover>
+				<Table striped bordered  >
 						<tr>
 							<th>Product Name</th>
 							<th>Price</th>
 							<th>Amount In Cart</th>
-							<th>Remove From Cart</th>
+							<th>Remove Item</th>
 						</tr>
 						{data.map(item => (
 							<tr>
 								<td>{item.title}</td>
 								<td>{item.price}</td>
-								<td>Total</td>
+            <td>{()=>{
+              item.price += item.price;
+            }}</td>
 								<td>
-										<button type="submit">Show Me</button>
+										<button type="submit">Remove Item</button>
 								</td>
 							</tr>
 						))}
 				</Table>
-			</Row>
-			<Row style={{ display: 'flex', justifyContent: 'center' }}>
-				<Form
-					onSubmit={e => {
-						e.preventDefault();
-					}}
-				>
-					<Button type="submit" className="btn btn-secondary">
-						Complete Purchase
-					</Button>
-				</Form>
 			</Row>
 		</Container>
 	);
