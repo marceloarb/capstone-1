@@ -13,12 +13,17 @@ const DisplayId = (props) =>{
     const product = Data.filter(item=>{
     return item.id == id;
 })
+
     return(
         <>
-            <img src="asdf" alt=""/>
-            <form action="">
-
-            </form>
+            <div>
+            <CardImg style={{margin:"0px"}} top width="100%" height="400rem" src={process.env.PUBLIC_URL + product[0].img[0]} alt="Card image cap" />
+                        <CardTitle>{product[0].title}</CardTitle>
+                        <CardSubtitle>{product[0].id}</CardSubtitle>
+                        <CardText><p>Price</p>{product[0].price}</CardText>
+                     <img src={process.env.PUBLIC_URL + product[0].img[0]} alt=""/>
+                    <h1>{product[0].img[0]}</h1>
+            </div>
         </>
     );
 }
