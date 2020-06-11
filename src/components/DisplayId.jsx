@@ -12,6 +12,7 @@ import { Container,Card, Button, CardImg, CardTitle, CardText, CardGroup,
 const DisplayId = (props) =>{
     const {search}=props;
     const [items, setitems] = useState(Data);
+    console.log(search);
     const product = Data.filter(p => p == search);
     console.log(product);
     return(

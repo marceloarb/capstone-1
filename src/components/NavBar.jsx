@@ -5,16 +5,14 @@ import { Link, Route } from 'react-router-dom';
 
 
 const NavBar = (props)=>{
-    const {setSearch,search}=props
+    const [search, setSearch] = useState('');
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
 
-    let value = "";
-    const onChange = (e) => {value = e.target.value;}
-    const onClick = (e)=>{
-        setSearch(value);
-        e.target.value="";
-        value = "";
+    const onChange = (e) => setSearch(e.target.value);
+    const onClick = ()=>{
+        props.getItemFromChild(search);
+        
         document.getElementById("reset").focus();
         document.getElementById("reset").value = "";
     }
@@ -43,7 +41,7 @@ const NavBar = (props)=>{
 
                 <div   className="form-inline my-2 my-lg-0">
                     <input id="reset" onChange={onChange}  className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button onClick={onClick} className="btn btn-dark my-2 my-sm-0 "  type="submit"><Link to="/product"> Search </Link></button>
+                    <button onClick={onClick} className="btn btn-dark my-2 my-sm-0 "  type="submit"> Search </button>
                 </div>
                 <Link to="/checkout" >
                 <svg className="bi bi-cart4" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

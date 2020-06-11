@@ -13,22 +13,27 @@ import DisplayAll from './components/DisplayAll'
 function App() {
   const [products, setProducts] = useState([]);
   const [items, setItems] = useState(Data);
-  const [search, setSearch] = useState('');
   
-  
-  
+  const getItemFromChild = (value) => {
+    console.log(value)
+    const newItem = Data.filter(item=>
+      Object.values(item).includes(value)
+      )
+    setItems(newItem);
+    console.log(newItem);
+    
+
+  }
   const handleClick = (ind)=>{
     setProducts([...products,ind]);
 }
 
-console.log(search);
   return (
     <Jumbotron >
-        <NavBar setSearch={setSearch} search={search} ></NavBar>
+        <NavBar getItemFromChild={getItemFromChild} />
         <Route exact path="/">
           <DisplayAll  items={items} onSetProducts={handleClick.bind()} ></DisplayAll>
         </Route>
-        <Route exact path="/product" render={(props)=> <DisplayId search={search}/>} />
         <Route exact path="/checkout">
         <ShoppingCart products={products} />
         </Route>
