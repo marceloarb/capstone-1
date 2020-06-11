@@ -8,3 +8,30 @@ form{
     width: 50%;
     margin: 10px;
 }
+
+#cart .fa-stack[data-count]:after{
+    position:absolute;
+    right:0%;
+    top:1%;
+    content: attr(data-count);
+    font-size:70%;
+    padding:.6em;
+    border-radius:50%;
+    line-height:.8em;
+    color: white;
+    background:rgba(255,0,0,.85);
+    text-align:center;
+    min-width: 1em;
+    font-weight:bold;
+  }
+
+#header{
+    font-size: 120px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 150px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,10 @@
+#logo{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 100px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    outline-color: black;
+    color: rgb(105, 95, 105);
+}

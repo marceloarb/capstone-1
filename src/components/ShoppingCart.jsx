@@ -1,19 +1,40 @@
 import React, {useState} from 'react';
 import {Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-    Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody,Container, Row, Col,Jumbotron,Table,Form
+import AnimatedButton from 'react-animated-buttons';
+import {Container, Row,Table
   } from 'reactstrap';
 
 
 
 
 const ShoppingCart = (props)=>{
-	const data = props.products;
-	console.log(data);
+	const data = props.products; 
 	let total = 0;
 	const totalAmount = data.map(item=> total += item.price);
+
+	function removeItemFromShoppingCart(i){
+		const newData = data.filter((item,index)=>{
+			if(index !== i){
+				return item;
+			}
+		})
+		props.setProducts(newData);
+	}
+
+	const removeAllItems = () =>{
+		alert("Are you sure ?")
+			props.setProducts([]);
+		
+		
+	}
+
+
+	function handleClick(){
+		return alert("Thank you for your purchase!")
+	}
+		
+	
 
   return (
 		<Container id="mainList">
@@ -22,21 +43,25 @@ const ShoppingCart = (props)=>{
 				<Table striped bordered  >
 						<tr>
 							<th>Product Name</th>
+							<th>Quantity</th>
 							<th>Price</th>
 							<th>Remove Item</th>
 						</tr>
-						{data.map(item => (
+						{data.map((item,index) => (
 							<tr>
 								<td>{item.title}</td>
+								<td>{item.inventory}</td>
 								<td>{item.price}</td>
 								<td>
-										<button type="submit">Remove Item</button>
+										<AnimatedButton onClick={()=>removeItemFromShoppingCart(index)} key={index} color="danger">Remove Item</AnimatedButton>
 								</td>
 							</tr>
 						))}
 						<tr>
 							<td>Total Amount</td>
 							<td>{total}</td>
+							<td><AnimatedButton onClick={handleClick} >Proceed to checkout</AnimatedButton></td>
+							<td><AnimatedButton onClick={removeAllItems} color="danger">Remove all</AnimatedButton></td>
 						</tr>
 				</Table>
 			</Row>

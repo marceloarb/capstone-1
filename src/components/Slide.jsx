@@ -1,13 +1,16 @@
 import React, { Component, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col,Collapse, Navbar, NavbarBrand,NavbarToggler, Nav, NavItem, NavLink  } from 'reactstrap';
+import './DisplayId.css';
+
 
 const Slide = (props) =>{
     
     
     return(
-        <div>
-            {props.onImage}
+        <div style={{backgroundColor:"Black"}} >
+            <h1 id="header">BLACK</h1>
+            <h1 id="header">LIVES</h1>
+            <h1 id="header">MATTER</h1>
         </div>
     )
 }

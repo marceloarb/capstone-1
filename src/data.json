@@ -100,7 +100,7 @@
         },
         {
             "id": 11 ,
-            "title": "Jumbsuit",
+            "title": "Jumpsuit",
             "key": 11,
             "price": 30.99 ,
             "img":["./images/img10.1.JPG","./images/img10.2.JPG","./images/img10.3.JPG"],
