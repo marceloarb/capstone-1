@@ -14,7 +14,7 @@
 <h2>
     2. Planning the Solution
 </h2>
-*Build a wireframe and a schedule.In my schedule I will have all that needs to be done with the time given.
+*Build a wireframe (Balsamic ) and a schedule.In my schedule I will have all that needs to be done with the time given.
 *JSON file with all the data.
 *Display all products with CSS and HTML.
 *Multiple pages with router.
@@ -25,7 +25,7 @@
 <h2>
     3. Executing the Plan
 </h2>
-*Follow the schedule.
+*Follow the schedule.(Trello );
 *Patience
 *Improvise.
 

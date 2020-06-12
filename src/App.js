@@ -24,7 +24,6 @@ function App() {
 
 
   const handleClick = (ind)=>{ 
-
     for(let x = 0; x<products.length; x++){
       if(products[x-1] === products[x]){
         products.splice(x,1);

@@ -20,7 +20,7 @@ const NavBar = (props)=>{
         <div>
             <Navbar color="faded" light>
                 <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-                <NavbarBrand href="/"  className="mr-auto">Home</NavbarBrand>
+                <NavbarBrand   className="mr-auto"><Link to="/">Home</Link></NavbarBrand>
                 
                 <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>

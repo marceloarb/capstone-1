@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AnimatedButton from 'react-animated-buttons';
-import {Container, Row,Table
+import {Container, Row,Table,Button
   } from 'reactstrap';
 
 
@@ -54,7 +53,7 @@ const ShoppingCart = (props)=>{
 								<td>{item.inventory}</td>
 								<td>{item.price}</td>
 								<td>
-										<AnimatedButton onClick={()=>removeItemFromShoppingCart(index)} key={index} color="danger">Remove Item</AnimatedButton>
+										<Button onClick={()=>removeItemFromShoppingCart(index)} key={index} color="danger">Remove Item</Button>
 								</td>
 							</tr>
 						))}
@@ -68,7 +67,7 @@ const ShoppingCart = (props)=>{
 								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
 								</form>
 								</td>
-							<td><AnimatedButton onClick={removeAllItems} color="danger">Remove all</AnimatedButton></td>
+							<td><Button onClick={removeAllItems} color="danger" >Remove all</Button></td>
 						</tr>
 				</Table>
 			</Row>

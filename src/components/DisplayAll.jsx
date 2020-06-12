@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
-import AnimatedButton from 'react-animated-buttons';
 
 import {
     Card, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody
+    CardSubtitle, CardBody,Button
   } from 'reactstrap';
 
 
@@ -31,7 +30,7 @@ const DisplayAll = (props)=>{
                             <CardTitle ><h3>{db.title}</h3></CardTitle>
                             <CardText>${db.price}</CardText>
                             <CardText>Quantity : {db.inventory}</CardText>
-                            <AnimatedButton onClick={() => onClick(db)}  className="btn btn-secondary" >Add to cart</AnimatedButton>
+                            <Button onClick={() => onClick(db)}  className="btn btn-secondary" >Add to cart</Button>
                             <CardSubtitle>Serial Number:{db.key}</CardSubtitle>
                             <CardSubtitle>Manufacture:{db.Manufacturer}</CardSubtitle>
                             <CardSubtitle>Category:{db.category}</CardSubtitle>
