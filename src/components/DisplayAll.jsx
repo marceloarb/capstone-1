@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 import AnimatedButton from 'react-animated-buttons';
 
 import {
-    Card, Button, CardImg, CardTitle, CardText, CardGroup,
-    CardSubtitle, CardBody,Form
+    Card, CardImg, CardTitle, CardText, CardGroup,
+    CardSubtitle, CardBody
   } from 'reactstrap';
 
 
@@ -32,9 +32,9 @@ const DisplayAll = (props)=>{
                             <CardText>${db.price}</CardText>
                             <CardText>Quantity : {db.inventory}</CardText>
                             <AnimatedButton onClick={() => onClick(db)}  className="btn btn-secondary" >Add to cart</AnimatedButton>
-                            <p>Serial Number:{db.key},
-                            Manufacture:{db.Manufacturer},
-                            Category:{db.category}</p>
+                            <CardSubtitle>Serial Number:{db.key}</CardSubtitle>
+                            <CardSubtitle>Manufacture:{db.Manufacturer}</CardSubtitle>
+                            <CardSubtitle>Category:{db.category}</CardSubtitle>
                             </CardBody>
                         </Card>
         
