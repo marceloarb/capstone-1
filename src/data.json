@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1 ,
+        "title": "Crop",
+        "key": "#2324",
+        "price": 28.99 ,
+        "img":["./images/img11.JPG","./images/img12.JPG","./images/img13.JPG"],
+        "category":"Tops",
+        "color":"",
+        "inventory":4,
+        "Manufacturer":"BrilhoVital"
+    },
+        {
+            "id": 3 ,
+            "title": "V-neck Jumpsuit",
+            "key": "#23245",
+            "price": 59.99 ,
+            "img":["./images/img2.1.JPG","./images/img2.2.JPG","./images/img2.3.JPG"],
+            "category":"Rompers",
+            "color":["Black","White"],
+            "inventory":6,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 4 ,
+            "title": "Crop",
+            "key": "#23246",
+            "price": 15.99 ,
+            "img":["./images/img3.1.JPG","./images/img3.2.JPG","./images/img3.3.JPG"],
+            "category":"Tops",
+            "color":["Blue"],
+            "inventory":10,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 7 ,
+            "title": "Jeans",
+            "key": "#23247",
+            "price": 21.99 ,
+            "img":["./images/img4.1.JPG","./images/img4.2.JPG","./images/img4.3.JPG"],
+            "category":"Bottoms",
+            "color":["Blue"],
+            "inventory":10,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 8 ,
+            "title": "Jumpsuit",
+            "key": "#23248",
+            "price": 15.99 ,
+            "img":["./images/img5.2.JPG","./images/img5.1.JPG"],
+            "category":"Rompers",
+            "color":["White"],
+            "inventory":11,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 9 ,
+            "title": "Dress",
+            "key": "#23249",
+            "price": 30.99 ,
+            "img":["./images/img6.1.JPG","./images/img6.2.JPG","./images/img6.3.JPG"],
+            "category":"Dress",
+            "color":["Gold","Black"],
+            "inventory":11,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 15 ,
+            "title": "Body",
+            "key": "#23240",
+            "price": 15.99 ,
+            "img":["./images/img7.2.JPG","./images/img7.1.JPG","./images/img7.3.JPG"],
+            "category":"Body",
+            "color":["Gold","Black","White"],
+            "inventory":11,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 10 ,
+            "title": "Dress",
+            "key":"#232401",
+            "price": 25.99 ,
+            "img":["./images/img8.1.JPG","./images/img8.2.JPG","./images/img8.3.JPG"],
+            "category":"Dress",
+            "color":["Black","Gold","White"],
+            "inventory":11,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 12 ,
+            "title": "Crop",
+            "key": "#232402",
+            "price": 15.99 ,
+            "img":["./images/img9.1.JPG","./images/img9.2.JPG","./images/img9.3.JPG"],
+            "category":"Top",
+            "color":["Pink","Black","White"],
+            "inventory":11,
+            "Manufacturer":"BrilhoVital"
+        },
+        {
+            "id": 11 ,
+            "title": "Jumpsuit",
+            "key": "#232403",
+            "price": 30.99 ,
+            "img":["./images/img10.1.JPG","./images/img10.2.JPG","./images/img10.3.JPG"],
+            "category":"Dress",
+            "color":["Green","Gold","Black"],
+            "inventory":11,
+            "Manufacturer":"BrilhoVital"
+        }
+    
+]
+
